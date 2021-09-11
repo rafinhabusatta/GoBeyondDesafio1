@@ -261,4 +261,37 @@ footer img{
     .footer-container {
         max-width: 1000px;
     }
+
+    .newsletter {
+        padding: 24px;
+    }
+
+    .newsletter .flex-container {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .newsletter button {
+        width: 140px;
+    }
+
+    .newsletter input {
+        margin-bottom: 0;
+        margin-right: 16px;
+        width: 280px;
+    }
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
