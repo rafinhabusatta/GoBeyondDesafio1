@@ -11,6 +11,12 @@ body {
     display: block;
 }
 
+.line-decoration {
+    border: 2px solid #E9BF33;
+    width: 32px;
+    margin-top: 5px;
+}
+
 /* MENU */
 
 .hamburguer-icon {
@@ -37,7 +43,12 @@ footer h2 {
 
 footer ul {
     list-style-type: none;
+    margin-bottom: 24px;
     /* font-size: 13px; */
+}
+
+footer li {
+    padding-top: 10px;
 }
 
 footer button {
@@ -45,13 +56,19 @@ footer button {
     border-radius: 5px;
     border: none;
     padding: 6px;
-    margin-top: 25px;
-    line-height: center;
+    display: block;
+    margin: 25px auto 0 auto;
+    width: 198px;
+    text-transform: uppercase;
 }
 
 footer img{
     padding-right: 10px;
 }
+
+/* .footer-logo {
+
+} */
 
 footer a:link {
     color: #fff;
@@ -60,9 +77,9 @@ footer a:link {
 
 /* MEDIA QUERIES */
 
-@media(min-width: 576px and max-width: 767.98px) {
+/* @media(min-width: 576px and max-width: 767.98px) {
 
-}
+} */
 
 @media (max-width: 768px) {
     .navbar-menu {
