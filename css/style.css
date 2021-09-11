@@ -7,6 +7,11 @@ body {
     font-family: Lato;
 }
 
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
 .d-block {
     display: block;
 }
@@ -25,6 +30,19 @@ body {
     margin-right: 10px;
 }
 
+.flex-container {
+    display: flex;
+}
+
+.btn {
+    background-color: #E9BF33;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    height: 48px;
+    color: #fff;
+}
+
 /* MENU */
 
 .hamburguer-icon {
@@ -33,9 +51,34 @@ body {
 
 .navbar-menu {
     list-style-type: none;
-    
-
 }
+
+/* NEWSLETTER */
+
+.newsletter{
+    padding: 16px;
+    background-color: #f2f2f2;
+}
+
+.newsletter .flex-container {
+    flex-direction: column;
+}
+
+.newsletter h2 {
+    font-size: 22px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.newsletter input {
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
 
 /* FOOTER */
 
@@ -63,14 +106,10 @@ footer li {
 }
 
 footer button {
-    background-color: #E9BF33;
-    border-radius: 5px;
-    border: none;
     padding: 6px;
     display: block;
     margin: 25px auto 0 auto;
     width: 198px;
-    text-transform: uppercase;
 }
 
 footer img{
@@ -83,18 +122,13 @@ footer img{
     margin-top: 24px;
 }
 
-footer a:link {
-    color: #fff;
-    text-decoration: none;
-}
-
 /* MEDIA QUERIES */
 
 /* @media(min-width: 576px and max-width: 767.98px) {
 
 } */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar-menu {
         position: relative;
     }
@@ -109,6 +143,16 @@ footer a:link {
       float: none;
       display: block;
       text-align: left;
+    }
+} */
+
+@media(min-width: 768px) {
+    .newsletter .flex-container {
+        align-items: center;
+    }
+
+    .newsletter input, .newsletter button {
+        width: 70%;
     }
 }
 
@@ -126,4 +170,37 @@ footer a:link {
         margin-top: 0;
         display: block;
     }
+
+    .newsletter {
+        padding: 24px;
+    }
+
+    .newsletter .flex-container {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .newsletter button {
+        width: 140px;
+    }
+
+    .newsletter input {
+        margin-bottom: 0;
+        margin-right: 16px;
+        width: 280px;
+    }
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
