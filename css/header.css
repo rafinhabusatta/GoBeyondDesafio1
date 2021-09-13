@@ -94,7 +94,7 @@ nav ul li {
     }
 
     header {
-        max-width: 60%;
+        max-width: 80%;
         margin: 0 auto;
     }
 
@@ -144,5 +144,11 @@ nav ul li {
 
     #cart {
         order: 5;
+    }
+}
+
+@media(min-width: 1200px) {
+    header {
+        max-width: 1000px;
     }
 }
