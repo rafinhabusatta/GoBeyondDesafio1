@@ -1,69 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Custom JS -->
-        <script src="js/corebiz.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
 
-        <title>Corebiz</title>
-    </head>
-    <body>
-        <header>
-            <nav class="grid-container">
-                <div id="navbar-menu">
-                    <input type="checkbox" id="navbar-mobile-input"  onclick="mobileMenuActive()">
-                    <label for="navbar-mobile-input" class="navbar-button d-lg-none">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </label>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#">Categoria 1</a>
-                            <div class="dropdown-content">
-                                <a href="#">Item 1</a>
-                                <a href="#">Item 2</a>
-                                <a href="#">Item 3</a>
-                              </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">Categoria 2</a>
-                            <div class="dropdown-content">
-                                <a href="#">Item 1</a>
-                                <a href="#">Item 2</a>
-                                <a href="#">Item 3</a>
-                              </div>
-                        </li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-               <a id="navbar-logo" href="index.html">
-                   <img class="d-lg-none" src="assets/logo-menu.png" alt="Corebiz logo">
-                   <img class="d-none d-lg-block" src="assets/logo-menu-desktop.png" alt="Corebiz logo">
-                </a>
-               <a id="my-account" class="d-none d-lg-block" href="#"><i class="fa fa-user-o" aria-hidden="true"></i>Minha conta</a>
-               <a id="cart" href="#"><img src="assets/cart.svg" alt="Carrinho"></a>
-                <input id="search-bar" type="text" placeholder="O que está procurando?">
-            </nav>
-        </header>
-        <div class="banner">
-            <h1>Olá, você quer fazer entrar de cabeça em desenvolvimento?</h1>
-            <h2>front-end <span>&#183;</span> back-end &#183; mobile</h2>
+    <title>Corebiz</title>
+</head>
+
+<body>
+    <header>
+        <nav class="grid-container">
+            <div id="navbar-menu">
+                <input type="checkbox" id="navbar-mobile-input" onclick="mobileMenuActive()">
+                <label for="navbar-mobile-input" class="navbar-button d-lg-none">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Categoria 1</a>
+                        <div class="dropdown-content">
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                            <a href="#">Item 3</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Categoria 2</a>
+                        <div class="dropdown-content">
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                            <a href="#">Item 3</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <a id="navbar-logo" href="index.html">
+                <img class="d-lg-none" src="assets/logo-menu.png" alt="Corebiz logo">
+                <img class="d-none d-lg-block" src="assets/logo-menu-desktop.png" alt="Corebiz logo">
+            </a>
+            <a id="my-account" class="d-none d-lg-block" href="#"><i class="fa fa-user-o" aria-hidden="true"></i>Minha
+                conta</a>
+            <a id="cart" href="#"><img src="assets/cart.svg" alt="Carrinho"></a>
+            <input id="search-bar" type="text" placeholder="O que está procurando?">
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="slider">
+            <a class="prevBanner d-none d-lg-block" onclick="addSlide(-1)">&#10094;</a>
+            <div class="slide">
+                <!-- <img src="assets/banner.png" alt=""> -->
+                <h1>Olá, você quer fazer entrar de cabeça em desenvolvimento?</h1>
+                <h2>front-end <span>&#183;</span> back-end &#183; mobile</h2>
+            </div>
+            <div class="slide">
+               Slide 2
+            </div>
+            <div class="slide">
+                Slide 3
+            </div>
+            
+            <div class="navigation">
+                <span for="" class="dot" onclick="activeSlide(1)"></span>
+                <span for="" class="dot" onclick="activeSlide(2)"></span>
+                <span for="" class="dot" onclick="activeSlide(3)"></span>
+            </div>
+            <a class="nextBanner d-none d-lg-block" onclick="addSlide(1)">&#10095;</a>
         </div>
-        <div class="produto">
-            <h2>Mais vendidos</h2>
-            <hr class="line-decoration">
+    </div>
+    <div class="produto">
+        <h2>Mais vendidos</h2>
+        <hr class="line-decoration">
+        <div class="cardsContainer">
+            <button class="prev btn" onclick="plusDivs(-1)">&#10094;</button>
             <div class="card">
-                <img src="assets/produto.jpg" alt="Imagem do Produto Sapato Floater Preto">
-                <span class="flag">OFF</span>
+                <div class="produtoImagem">
+                    <div class="flag"><span>OFF</span></div>
+                    <img src="assets/produto.jpg" alt="Imagem do Produto Sapato Floater Preto">
+                </div>
                 <h3>Sapato Floater Preto</h3>
                 <div class="star-rating">
                     <span class="fa fa-star checked"></span>
@@ -77,51 +100,104 @@
                 <p>ou em 9x de R$ 28,87</p>
                 <button class="btn" type="button">
                     <a href="#">
-<<<<<<< HEAD
                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
-=======
-                        <i class="fab fa-whatsapp"></i>
->>>>>>> b95b305 (Corebiz - Implementação parcial do card Produto;)
                         <span>Comprar</span>
                     </a>
                 </button>
             </div>
-        </div>
-        <div class="newsletter">
-            <h2>Participe de nossas news com promoções e novidades!</h2>
-            <div class="flex-container">
-                <input type="text" placeholder="Digite seu nome">
-                <input type="text" placeholder="Digite seu email">
-                <button class="btn" type="button" class="d-block">
-                    <a href="#">Eu quero!</a>
+            <div class="card">
+                <div class="produtoImagem">
+                    <div class="flag"><span>OFF</span></div>
+                    <img src="assets/vans.webp" alt="Imagem do Produto Sapato Floater Preto">
+                </div>
+                <h3>Vans Tênis Old Skool</h3>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>de R$299,00</p>
+                <p class="price">por R$ 259,90</p>
+                <p>ou em 9x de R$ 28,87</p>
+                <button class="btn" type="button">
+                    <a href="#">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <span>Comprar</span>
+                    </a>
                 </button>
             </div>
-        </div>
-        <footer>
-            <div class="flex-container footer-container">
-                <div class="location">
-                    <a href="#"><h2>Localização</h2></a>
-                    <hr class="line-decoration">
-                    <ul>
-                        <li><a href="#">Avenida Andrômeda, 2000. Bloco 6 e 8</a></li>
-                        <li>Alphavile SP</li>
-                        <li><a href="#">brasil@corebiz.ag</a></li>
-                        <li><a href="#">+55 11 3090 1039</a></li>
-                    </ul>
+            <div class="card">
+                <div class="produtoImagem">
+                    <div class="flag"><span>OFF</span></div>
+                    <img src="assets/sk8-low.webp" alt="Imagem do Produto Sapato Floater Preto">
                 </div>
-                <div class="contato">
-                    <button class="btn" type="button">
-                        <a href="#"><i class="fa fa-envelope fs-18 mr-10" aria-hidden="true"></i>Entre em contato</a>
-                    </button>
-                    <button class="btn" type="button">
-                        <a href="#"><span><img src="assets/contact.svg" alt="símbolo de contato telefônico"></span><span>Fale com o nosso consultor online</span></a>
-                    </button>
+                <h3>Tênis SK8-Low</h3>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
                 </div>
-                <div class="footer-logos">
-                    <img src="assets/logo-footer.png" alt="Created by Corebiz.">
-                    <img src="assets/vtex-logo-footer.png" alt="Powered by VTEX">
-                </div>
+                <p>de R$599,99</p>
+                <p class="price">por R$ 379,99</p>
+                <p>ou em 7x de R$ 54,28</p>
+                <button class="btn" type="button">
+                    <a href="#">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <span>Comprar</span>
+                    </a>
+                </button>
             </div>
-        </footer>
-    </body>
+            <button class="next btn" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </div>
+    <div class="newsletter">
+        <h2>Participe de nossas news com promoções e novidades!</h2>
+        <div class="flex-container">
+            <input type="text" placeholder="Digite seu nome">
+            <input type="text" placeholder="Digite seu email">
+            <button class="btn" type="button" class="d-block">
+                <a href="#">Eu quero!</a>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div class="flex-container footer-container">
+            <div class="location">
+                <a href="#">
+                    <h2>Localização</h2>
+                </a>
+                <hr class="line-decoration">
+                <ul>
+                    <li><a href="#">Avenida Andrômeda, 2000. Bloco 6 e 8</a></li>
+                    <li>Alphavile SP</li>
+                    <li><a href="#">brasil@corebiz.ag</a></li>
+                    <li><a href="#">+55 11 3090 1039</a></li>
+                </ul>
+            </div>
+            <div class="contato">
+                <button class="btn" type="button">
+                    <a href="#"><i class="fa fa-envelope fs-18 mr-10" aria-hidden="true"></i>Entre em contato</a>
+                </button>
+                <button class="btn" type="button">
+                    <a href="#"><span><img src="assets/contact.svg"
+                                alt="símbolo de contato telefônico"></span><span>Fale com o nosso consultor
+                            online</span></a>
+                </button>
+            </div>
+            <div class="footer-logos">
+                <img src="assets/logo-footer.png" alt="Created by Corebiz.">
+                <img src="assets/vtex-logo-footer.png" alt="Powered by VTEX">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/corebiz.js"></script>
+
+</body>
+
 </html>

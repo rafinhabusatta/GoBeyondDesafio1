@@ -1,0 +1,224 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        /* PRODUTO */
+        .produto {
+            padding: 16px;
+        }
+
+        .produto h2 {
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 16px auto 36px;
+            border-radius: 5px;
+            width: 216px;
+            height: 380px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 16px;
+            color: #7a7a7a;
+        }
+
+        .card p,
+        .star-rating {
+            margin-bottom: 8px;
+        }
+
+        .card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .card button {
+            background-color: #00E676;
+            width: 125px;
+            height: 32px;
+        }
+
+        .produtoImagem {
+            position: relative;
+        }
+
+        .flag span {
+            padding-left: 24px;
+        }
+
+        .card .flag {
+            position: absolute;
+            color: #ffffff;
+            background: url("../assets/bgOff.svg") no-repeat;
+            width: 60px;
+            height: 60px;
+            top: 0;
+            right: 0;
+            padding: 4px;
+            padding-top: 8px;
+        }
+
+        .checked {
+            color: #FFD874;
+        }
+
+        /* body {
+                display: flex;
+            } */
+        /* SLIDER */
+        .slider {
+            width: 100%;
+            height: 412px;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: all 0.5s;
+        }
+
+        .sliderItems {
+            /*arruinando centralizacao card*/
+            width: 5024px;
+            display: flex;
+        }
+
+        .card #active {
+            margin-left: 0;
+            transition: all 0.5s;
+        }
+
+        .btnSlider {
+            position: absolute;
+            color: #424242;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 30px;
+            margin-top: -5px;
+            transition: all 0.5s;
+        }
+
+        .btnSlider:hover {
+            transform: scale(1.5);
+        }
+
+        #prev {
+            top: 90%;
+            left: 10%;
+        }
+
+        #next {
+            top: 90%;
+            right: 10%;
+        }
+
+        .dots {
+            position: absolute;
+            width: 216px;
+            display: flex;
+            justify-content: center;
+            margin-top: -45px;
+            background-color: yellow;
+            width: 300px;
+            height: 100px;
+        }
+
+        .dots div {
+            transition: all 0.5s;
+            border: 3px solid #ffffff;
+            padding: 6px;
+            border-radius: 50%;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .dots div:hover {
+            background-color: #ffffff;
+        }
+    </style>
+
+    <script>
+        let dots = document.querySelector(".dots")
+        let totalCards = document.querySelectorAll(".slideItems .card")
+        let atual = 0
+        let card = document.querySelector("#active")
+        let prev = document.querySelector("#prev")
+        let next = document.querySelector("#next")
+
+        for (let i = 0; i < totalCards.length; i++) {
+            let div = document.createElement('div')
+            dots.appendChild(div)
+        }
+        document.querySelector("#0").classList.add('active')
+
+        let pos = document.querySelectorAll(".dots div")
+        for (let i = 0; i < totalCards.length; i++) {
+            pos[i].addEventListener('click', function () {
+                atual = pos[i]
+            })
+        }
+
+        prev.addEventListener('click', () => {
+            atual--
+        })
+
+        next.addEventListener('click', () => {
+            atual++
+        })
+
+        function slide() {
+            if (atual >= cards.length) {
+                atual = 0
+            }
+            else if (atual < 0) {
+                atual = cards.length - 1
+            }
+
+        }
+    </script>
+
+    <title>Corebiz</title>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="sliderItems">
+            <div id="prev" class="btnSlider">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div id="next" class="btnSlider">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+            <div id="atual" class="images">
+                card 1
+            </div>
+            <div class="images">
+                card 2
+            </div>
+            <div class="images">
+                card 3
+            </div>
+        </div>
+        <div class="dots">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
