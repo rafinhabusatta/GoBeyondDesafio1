@@ -331,9 +331,15 @@ footer img{
 
     .slide {
         height: 430px;
+        box-sizing: border-box;
+    }
+
+    .slide-text {
         padding-top: 100px;
         padding-left: 130px;
-        box-sizing: border-box;
+        background-image: url("../assets/bannerMask.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .navigation {
